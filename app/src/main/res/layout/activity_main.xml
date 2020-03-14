@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/menu1btn"
+        android:layout_width="134dp"
+        android:layout_height="93dp"
+        android:onClick="onclickmenu1"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="204dp"
+        android:text="Menu1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/menu2btn"
+        android:layout_width="134dp"
+        android:layout_height="93dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="204dp"
+        android:layout_marginEnd="55dp"
+        android:onClick="onclickmenu2"
+        android:text="Menu2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/menu1btn"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/menu3btn"
+        android:layout_width="123dp"
+        android:layout_height="89dp"
+        android:layout_marginStart="49dp"
+        android:layout_marginTop="43dp"
+        android:text="Menu3"
+        android:onClick="onclickmenu3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/menu1btn" />
+
+    <Button
+        android:id="@+id/menu4btn"
+        android:layout_width="136dp"
+        android:layout_height="89dp"
+        android:layout_marginStart="49dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="54dp"
+        android:text="Menu4"
+        android:onClick="onclickmenu4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/menu3btn"
+        app:layout_constraintTop_toBottomOf="@+id/menu2btn" />
+</androidx.constraintlayout.widget.ConstraintLayout>
